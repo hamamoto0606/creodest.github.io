@@ -56,7 +56,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
 .logo-container {
@@ -385,7 +385,7 @@ footer {
 /* レスポンシブデザイン */
 @media (max-width: 992px) {
   .header-container {
-    padding: 15px 0;
+    padding: 0;
   }
   
   nav ul li {
