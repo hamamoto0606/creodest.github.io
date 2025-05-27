@@ -76,6 +76,11 @@ header {
   color: var(--primary-color);
 }
 
+.logo-image {
+  width: 127px; /* 幅を127pxに調整 */
+  height: auto; /* 縦横比を保ったまま自動調整 */
+}
+
 .company-name {
   font-size: 24px;
   font-weight: bold;
