@@ -293,7 +293,7 @@ section {
   top: 10px;
   width: 8px;
   height: 8px;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   border-radius: 50%;
 }
 
@@ -385,7 +385,7 @@ footer {
 /* レスポンシブデザイン */
 @media (max-width: 992px) {
   .header-container {
-    padding: 0;
+    padding:  0;
   }
   
   nav ul li {
