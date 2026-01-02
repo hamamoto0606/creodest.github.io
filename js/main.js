@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // スクロールアニメーション
-    const scrollElements = document.querySelectorAll('.scroll-animation');
+    const scrollElements = document.querySelectorAll('.scroll-animation, .fade-in');
     
     const elementInView = (el, dividend = 1) => {
         const elementTop = el.getBoundingClientRect().top;
@@ -25,19 +25,17 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     const displayScrollElement = (element) => {
-        element.classList.add('scrolled');
+        element.classList.add('visible');
     };
     
     const hideScrollElement = (element) => {
-        element.classList.remove('scrolled');
+        element.classList.remove('visible');
     };
     
     const handleScrollAnimation = () => {
         scrollElements.forEach((el) => {
             if (elementInView(el, 1.25)) {
                 displayScrollElement(el);
-            } else {
-                hideScrollElement(el);
             }
         });
     };
@@ -49,4 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', () => {
         handleScrollAnimation();
     });
+    
+    // ページ遷移時にスクロール位置をリセット
+    window.scrollTo(0, 0);
 });
