@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>思想 - CreoDest</title>
+    <meta name="description" content="CreoDestの思想・カルチャー。人生の制約を前提にし、非対称性を構造とイノベーションで溶かす。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="CreoDest" class="logo-image">
+                    <span class="company-name">CreoDest</span>
+                </a>
+            </div>
+            
+            <!-- 言語切り替え -->
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="ja">日本語</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+                <button class="lang-btn" data-lang="vi">Tiếng Việt</button>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
+                    <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
+                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
+                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
+                    <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ページヒーロー -->
+        <section class="page-hero">
+            <div class="container">
+                <p class="page-subtitle" data-i18n="philosophy.pageSubtitle">Philosophy</p>
+                <h1 class="page-title" data-i18n="philosophy.pageTitle">思想</h1>
+            </div>
+        </section>
+
+        <!-- コアセクション -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-block fade-in">
+                    <h2 data-i18n="philosophy.coreTitle">人生の制約を前提にする</h2>
+                    <p data-i18n="philosophy.coreText1">人には様々な制約がある。育児、介護、健康、学習、地理的な制約。これらは「例外」ではなく、人生の「前提」である。</p>
+                    <p data-i18n="philosophy.coreText2">私たちは、これらの制約を「働く上での障害」として扱わない。むしろ、多様な制約を持つ人々が、それぞれの強みを発揮できる構造をつくることで、より大きな価値を生み出せると考えている。</p>
+                </div>
+
+                <div class="content-block fade-in">
+                    <h2 data-i18n="philosophy.asymmetryTitle">非対称性を溶かす</h2>
+                    <p data-i18n="philosophy.asymmetryText1">情報の非対称性、機会の非対称性、能力の非対称性。世の中には様々な非対称性が存在する。</p>
+                    <p data-i18n="philosophy.asymmetryText2">これらの非対称性は完全になくなることはない。しかし、構造とイノベーションによって、その影響を最小化することはできる。</p>
+                    <p data-i18n="philosophy.asymmetryText3">私たちは、テクノロジーと仕組みの力で、非対称性を溶かし、より公平な価値創出の場をつくることを目指している。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="CreoDest" class="footer-logo-image">
+                    <span class="footer-company-name">CreoDest</span>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
+                        <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
+                        <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
+                        <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
+                        <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2026 CreoDest All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
