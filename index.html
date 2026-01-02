@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreoDest - 信頼にこたえる、かたちのある技術</title>
-    <meta name="description" content="CreoDestは、企業の「ITの困った」に寄り添う、少数精鋭のITパートナーです。システム導入から運用、現場調整、改善提案まで――専門性と誠実さをもって、現場に根ざした支援を行います。">
+    <title>CreoDest - 人生の制約を、働く制約にしない会社</title>
+    <meta name="description" content="CreoDestは、人生の制約を働く制約にしない会社です。非対称性はなくならない。だから私たちは、構造とイノベーションでそれを溶かす。">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- ヘッダー -->
     <header>
         <div class="container header-container">
             <div class="logo-container">
-                <img src="images/logo.png" alt="CreoDest" class="logo-image">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="CreoDest" class="logo-image">
+                    <span class="company-name">CreoDest</span>
+                </a>
             </div>
+            
+            <!-- 言語切り替え -->
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="ja">日本語</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+                <button class="lang-btn" data-lang="vi">Tiếng Việt</button>
+            </div>
+            
             <div class="mobile-menu-btn">
                 <span></span>
                 <span></span>
@@ -24,10 +36,12 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="company.html">会社概要</a></li>
-                    <li><a href="services.html">サービス紹介</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
+                    <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
+                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
+                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
+                    <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,88 +52,88 @@
         <!-- ヒーローセクション -->
         <section class="hero">
             <div class="container">
-                <h1>信頼にこたえる、かたちのある技術。<br>――CreoDest</h1>
-                <p>CreoDestは、企業の「ITの困った」に寄り添う、少数精鋭のITパートナーです。</p>
-                <a href="services.html" class="btn">サービスを見る</a>
+                <h1 data-i18n="hero.title">人生の制約を、<br><span class="highlight">働く制約にしない</span>会社</h1>
+                <p class="philosophy-text" data-i18n="hero.philosophy">非対称性はなくならない。<br>だから私たちは、構造とイノベーションでそれを溶かす。</p>
+                <a href="philosophy.html" class="btn" data-i18n="hero.cta">私たちの思想を知る</a>
             </div>
         </section>
 
-        <!-- 会社紹介セクション -->
-        <section class="company-intro scroll-animation">
+        <!-- 価値観セクション -->
+        <section class="values">
             <div class="container">
-                <div class="section-title">
-                    <h2>CreoDestについて</h2>
-                </div>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <h3>私たちの想い</h3>
-                        <p>CreoDestは、企業のIT導入・改善プロジェクトにおいて、構想段階から実行フェーズまで、現場に寄り添いながら支援します。「外部の専門家」という立場にとどまらず、クライアントの一員として並走する実務志向のコンサルティングを提供します。</p>
+                <h2 class="section-title" data-i18n="values.title">私たちの価値観</h2>
+                <div class="values-grid">
+                    <div class="value-card fade-in">
+                        <div class="value-number">01</div>
+                        <h3 data-i18n="values.distributed.title">分散前提の組織</h3>
+                        <p data-i18n="values.distributed.desc">人を一箇所に集めることで価値を出すのではなく、分散したまま価値が循環し続ける構造をつくる。</p>
                     </div>
-                    <div class="info-item">
-                        <h3>私たちの強み</h3>
-                        <p>システム導入・刷新に関する構想支援から要件定義、現場ヒアリングや業務分析、課題抽出、プロジェクト推進・ベンダーコントロール支援まで、一貫したサポートを提供します。</p>
+                    <div class="value-card fade-in">
+                        <div class="value-number">02</div>
+                        <h3 data-i18n="values.global.title">グローバルに拠点を持つ</h3>
+                        <p data-i18n="values.global.desc">世界各地に拠点を持ち、多様な視点と知識の循環によって、より良い価値を生み出す。</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- サービス紹介セクション（簡易版） -->
-        <section class="services-preview scroll-animation">
-            <div class="container">
-                <div class="section-title">
-                    <h2>サービス紹介</h2>
-                </div>
-                <div class="services-container">
-                    <div class="service-card">
-                        <div class="service-content">
-                            <h3>ITコンサルティング・業務支援</h3>
-                            <p>企業のIT導入・改善プロジェクトにおいて、構想段階から実行フェーズまで、現場に寄り添いながら支援します。</p>
-                            <a href="services.html" class="btn">詳細を見る</a>
-                        </div>
+                    <div class="value-card fade-in">
+                        <div class="value-number">03</div>
+                        <h3 data-i18n="values.longterm.title">長期LTV志向</h3>
+                        <p data-i18n="values.longterm.desc">短期的な成果ではなく、長期的に価値を積み上げていく関係を築く。</p>
                     </div>
-                    <div class="service-card">
-                        <div class="service-content">
-                            <h3>その他対応可能な領域</h3>
-                            <p>経営管理システム 導入・運用支援、日本語・ベトナム語混成チームへのオフショア開発アドバイザリなど、幅広い領域に対応しています。</p>
-                            <a href="services.html" class="btn">詳細を見る</a>
-                        </div>
+                    <div class="value-card fade-in">
+                        <div class="value-number">04</div>
+                        <h3 data-i18n="values.structure.title">構造による価値創出</h3>
+                        <p data-i18n="values.structure.desc">個人の能力に依存するのではなく、構造とシステムによって持続的な価値を生み出す。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- お問い合わせセクション（簡易版） -->
-        <section class="contact-preview scroll-animation">
+        <!-- メッセージセクション -->
+        <section class="message">
             <div class="container">
-                <div class="section-title">
-                    <h2>お問い合わせ</h2>
-                </div>
-                <div class="contact-content">
-                    <p>CreoDestへのお問い合わせは、以下のメールアドレスからお願いいたします。</p>
-                    <a href="mailto:info@creodest.com" class="contact-email">info@creodest.com</a>
-                </div>
+                <p class="message-text fade-in" data-i18n="message.text">
+                    CreoDestは、<br>
+                    人を一箇所に集めることで価値を出す会社ではない。<br>
+                    人が分散したまま、価値が循環し続ける構造をつくる会社である。
+                </p>
+            </div>
+        </section>
+
+        <!-- お問い合わせセクション -->
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact.title">お問い合わせ</h2>
+                <p class="contact-desc" data-i18n="contact.description">サービスについてのご質問やご相談は、以下のメールアドレスからお気軽にお問い合わせください。</p>
+                <a href="mailto:info@creodest.com" class="contact-email">info@creodest.com</a>
             </div>
         </section>
     </main>
 
     <!-- フッター -->
     <footer>
-        <div class="container footer-content">
-            <div class="footer-logo">CreoDest</div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="company.html">会社概要</a></li>
-                    <li><a href="services.html">サービス紹介</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
-                </ul>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="CreoDest" class="footer-logo-image">
+                    <span class="footer-company-name">CreoDest</span>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
+                        <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
+                        <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
+                        <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
+                        <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="copyright">
-                &copy; 2025 CreoDest All Rights Reserved.
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2026 CreoDest All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
