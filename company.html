@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>会社概要 - CreoDest</title>
-    <meta name="description" content="CreoDestの会社概要ページです。代表者、所在地、事業内容などの情報をご覧いただけます。">
+    <meta name="description" content="CreoDestの会社概要ページです。代表者、所在地などの情報をご覧いただけます。">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- ヘッダー -->
     <header>
         <div class="container header-container">
             <div class="logo-container">
-                <img src="images/logo.png" alt="CreoDest" class="logo-image">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="CreoDest" class="logo-image">
+                    <span class="company-name">CreoDest</span>
+                </a>
             </div>
+            
+            <!-- 言語切り替え -->
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="ja">日本語</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+                <button class="lang-btn" data-lang="vi">Tiếng Việt</button>
+            </div>
+            
             <div class="mobile-menu-btn">
                 <span></span>
                 <span></span>
@@ -24,10 +36,12 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="company.html">会社概要</a></li>
-                    <li><a href="services.html">サービス紹介</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
+                    <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
+                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
+                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
+                    <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,55 +49,54 @@
 
     <!-- メインコンテンツ -->
     <main>
-        <!-- 会社概要ヘッダー -->
+        <!-- ページヘッダー -->
         <section class="page-header">
             <div class="container">
-                <h1>会社概要</h1>
+                <h1 data-i18n="company.pageTitle">会社概要</h1>
+                <p class="page-subtitle" data-i18n="company.pageSubtitle">Company</p>
             </div>
         </section>
 
-        <!-- 会社概要詳細 -->
+        <!-- 会社ロゴ -->
+        <section class="company-logo-section scroll-animation">
+            <div class="container">
+                <div class="company-logo-display">
+                    <img src="images/logo.png" alt="CreoDest" class="company-main-logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- 会社情報 -->
         <section class="company-info scroll-animation">
             <div class="container">
                 <div class="section-title">
-                    <h2>会社情報</h2>
+                    <h2 data-i18n="company.infoTitle">会社情報</h2>
                 </div>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <h3>基本情報</h3>
-                        <p><span class="label">会社名:</span> CreoDest（クレオデスト）</p>
-                        <p><span class="label">所在地:</span> 〒220-0004 神奈川県横浜市西区北幸1-11-1 水信ビル7階</p>
-                    </div>
-                    <div class="info-item">
-                        <h3>事業内容</h3>
-                        <p>ITコンサルティング・業務支援</p>
-                        <ul class="service-list">
-                            <li>システム導入・刷新に関する構想支援・要件定義</li>
-                            <li>現場ヒアリングや業務分析、課題抽出</li>
-                            <li>プロジェクト推進・ベンダーコントロール支援</li>
-                            <li>定着・運用フェーズにおける業務設計・マニュアル作成</li>
-                        </ul>
-                    </div>
+                <div class="company-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th data-i18n="company.companyName">会社名</th>
+                                <td>CreoDest（クレオデスト）</td>
+                            </tr>
+                            <tr>
+                                <th data-i18n="company.ceo">代表取締役</th>
+                                <td data-i18n="company.ceoName">濱本 一弥</td>
+                            </tr>
+                            <tr>
+                                <th data-i18n="company.address">所在地</th>
+                                <td data-i18n="company.addressValue">〒220-0004<br>神奈川県横浜市西区北幸1-11-1<br>水信ビル7階</td>
+                            </tr>
+                            <tr>
+                                <th data-i18n="company.contactLabel">お問い合わせ</th>
+                                <td><a href="mailto:info@creodest.com">info@creodest.com</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-        </section>
-
-        <!-- 企業理念 -->
-        <section class="philosophy scroll-animation">
-            <div class="container">
-                <div class="section-title">
-                    <h2>企業理念</h2>
-                </div>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <h3>ミッション</h3>
-                        <p>CreoDestは、企業のIT導入・改善プロジェクトにおいて、構想段階から実行フェーズまで、現場に寄り添いながら支援します。「外部の専門家」という立場にとどまらず、クライアントの一員として並走する実務志向のコンサルティングを提供します。</p>
-                    </div>
-                    <div class="info-item">
-                        <h3>ビジョン</h3>
-                        <p>信頼にこたえる、かたちのある技術を提供し、クライアント企業の成長と発展に貢献します。</p>
-                    </div>
-                </div>
+                <p class="company-note" data-i18n="company.note">
+                    ※ 所在地は登記上の住所です。私たちは分散型の組織であり、特定の場所に集まることを前提としていません。
+                </p>
             </div>
         </section>
 
@@ -91,8 +104,8 @@
         <section class="cta scroll-animation">
             <div class="container">
                 <div class="contact-content">
-                    <h3>お問い合わせ</h3>
-                    <p>CreoDestへのお問い合わせは、以下のメールアドレスからお願いいたします。</p>
+                    <h3 data-i18n="contact.title">お問い合わせ</h3>
+                    <p data-i18n="contact.description">CreoDestへのお問い合わせは、以下のメールアドレスからお願いいたします。</p>
                     <a href="mailto:info@creodest.com" class="contact-email">info@creodest.com</a>
                 </div>
             </div>
@@ -102,21 +115,27 @@
     <!-- フッター -->
     <footer>
         <div class="container footer-content">
-            <div class="footer-logo">CreoDest</div>
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="CreoDest" class="footer-logo-image">
+                <span>CreoDest</span>
+            </div>
             <div class="footer-nav">
                 <ul>
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="company.html">会社概要</a></li>
-                    <li><a href="services.html">サービス紹介</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
+                    <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
+                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
+                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
+                    <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
                 </ul>
             </div>
             <div class="copyright">
-                &copy; 2025 CreoDest All Rights Reserved.
+                <span data-i18n="footer.copyright">&copy; 2026 CreoDest All Rights Reserved.</span>
             </div>
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
