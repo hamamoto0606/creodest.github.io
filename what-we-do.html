@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>私たちの価値 - CreoDest</title>
-    <meta name="description" content="CreoDestが提供する価値。クライアントごとに異なる課題に対して、構造的なアプローチで向き合う。">
+    <title>支援領域 - CreoDest</title>
+    <meta name="description" content="CreoDestの支援領域。どんな課題に対して、どう支援するか。構想から実行、運用定着まで伴走します。">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- ヘッダー -->
     <header>
         <div class="container header-container">
             <div class="logo-container">
@@ -20,26 +19,20 @@
                     <span class="company-name">CreoDest</span>
                 </a>
             </div>
-            
-            <!-- 言語切り替え -->
             <div class="lang-switcher">
                 <button class="lang-btn" data-lang="ja">日本語</button>
                 <button class="lang-btn" data-lang="en">EN</button>
                 <button class="lang-btn" data-lang="zh">中文</button>
                 <button class="lang-btn" data-lang="vi">Tiếng Việt</button>
             </div>
-            
-            <div class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="mobile-menu-btn"><span></span><span></span><span></span></div>
             <nav>
                 <ul>
                     <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
                     <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
-                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
-                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
+                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">支援領域</a></li>
+                    <li><a href="our-value.html" data-i18n="nav.ourValue">私たちの価値</a></li>
+                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方・仲間</a></li>
                     <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
                     <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
                 </ul>
@@ -47,127 +40,111 @@
         </div>
     </header>
 
-    <!-- メインコンテンツ -->
     <main>
-        <!-- ページヘッダー -->
         <section class="page-header">
             <div class="container">
-                <h1 data-i18n="whatWeDo.pageTitle">私たちの価値</h1>
                 <p class="page-subtitle" data-i18n="whatWeDo.pageSubtitle">What We Do</p>
+                <h1 data-i18n="whatWeDo.pageTitle">支援領域</h1>
             </div>
         </section>
 
-        <!-- イントロ -->
-        <section class="intro scroll-animation">
+        <section class="content-section">
+            <div class="container content-narrow">
+                <p class="section-lead" data-i18n="whatWeDo.intro">クライアントごとに異なる課題に対して、構造的なアプローチで向き合う。<br>テクノロジーは手段であり、目的ではない。業務を深く理解した上で、実効性のある解決策を提供する。</p>
+            </div>
+        </section>
+
+        <section class="service-section">
             <div class="container">
-                <div class="intro-content">
-                    <p class="lead-text" data-i18n="whatWeDo.intro">
-                        クライアントごとに異なる課題に対して、構造的なアプローチで向き合う。
-                    </p>
+                <h2 class="section-title" data-i18n="whatWeDo.serviceTitle">支援テーマ</h2>
+                <div class="service-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-number">01</div>
+                        <h3 data-i18n="whatWeDo.service1.title">業務とシステムの整理</h3>
+                        <p data-i18n="whatWeDo.service1.desc">現場ヒアリングや業務分析を通じて、表面的な問題だけでなく根本的な課題を抽出する。業務フローの可視化から改善策の立案まで支援する。</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-number">02</div>
+                        <h3 data-i18n="whatWeDo.service2.title">プロジェクトの立て直し・推進</h3>
+                        <p data-i18n="whatWeDo.service2.desc">停滞したプロジェクトの課題を特定し、体制・進め方を再設計する。要件定義からプロジェクト推進まで、実務レベルで伴走する。</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-number">03</div>
+                        <h3 data-i18n="whatWeDo.service3.title">分散チームでの推進体制づくり</h3>
+                        <p data-i18n="whatWeDo.service3.desc">多国籍メンバーを含む分散体制でも安定して進行できる仕組みをつくる。役割設計・情報共有・コミュニケーション基盤の整備を支援する。</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-number">04</div>
+                        <h3 data-i18n="whatWeDo.service4.title">運用改善・定着化支援</h3>
+                        <p data-i18n="whatWeDo.service4.desc">導入後の定着・運用を見据えた業務設計と、組織が自走できる仕組みづくりを支援する。属人化した運用の見直しも含む。</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- アプローチ -->
-        <section class="approach scroll-animation">
+        <section class="approach-section alt-bg">
             <div class="container">
-                <div class="section-title">
-                    <h2 data-i18n="whatWeDo.approachTitle">私たちのアプローチ</h2>
-                </div>
+                <h2 class="section-title" data-i18n="whatWeDo.approachTitle">私たちのアプローチ</h2>
                 <div class="approach-grid">
-                    <div class="approach-item">
-                        <span class="approach-number">01</span>
+                    <div class="approach-item fade-in">
                         <h3 data-i18n="whatWeDo.approach1.title">長期的な視点</h3>
-                        <p data-i18n="whatWeDo.approach1.desc">
-                            短期的な成果だけでなく、長期的な価値創出を重視する。
-                            クライアントのビジネスが持続的に成長するための基盤づくりを支援する。
-                        </p>
+                        <p data-i18n="whatWeDo.approach1.desc">短期的な成果だけでなく、長期的な価値創出を重視する。クライアントのビジネスが持続的に成長するための基盤づくりを支援する。</p>
                     </div>
-                    <div class="approach-item">
-                        <span class="approach-number">02</span>
+                    <div class="approach-item fade-in">
                         <h3 data-i18n="whatWeDo.approach2.title">現場に寄り添う</h3>
-                        <p data-i18n="whatWeDo.approach2.desc">
-                            「外部の専門家」という立場にとどまらず、クライアントの一員として並走する。
-                            現場の声を丁寧に聞き、実務に即した解決策を提案する。
-                        </p>
+                        <p data-i18n="whatWeDo.approach2.desc">「外部の専門家」という立場にとどまらず、クライアントの一員として並走する。現場の声を丁寧に聞き、実務に即した解決策を提案する。</p>
                     </div>
-                    <div class="approach-item">
-                        <span class="approach-number">03</span>
+                    <div class="approach-item fade-in">
                         <h3 data-i18n="whatWeDo.approach3.title">業務 × テクノロジー</h3>
-                        <p data-i18n="whatWeDo.approach3.desc">
-                            テクノロジーは手段であり、目的ではない。
-                            業務を深く理解した上で、テクノロジーを適切に組み合わせることで、
-                            実効性のある解決策を提供する。
-                        </p>
+                        <p data-i18n="whatWeDo.approach3.desc">テクノロジーは手段であり、目的ではない。業務を深く理解した上で、テクノロジーを適切に組み合わせることで、実効性のある解決策を提供する。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 提供価値 -->
-        <section class="value-delivery scroll-animation">
+        <section class="consult-themes">
             <div class="container">
-                <div class="section-title">
-                    <h2 data-i18n="whatWeDo.valueTitle">提供する価値</h2>
-                </div>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <h3 data-i18n="whatWeDo.value1.title">構想から実行まで</h3>
-                        <p data-i18n="whatWeDo.value1.desc">
-                            システム導入・刷新に関する構想支援から要件定義、
-                            プロジェクト推進、定着・運用フェーズまで、
-                            一貫して支援する。
-                        </p>
-                    </div>
-                    <div class="info-item">
-                        <h3 data-i18n="whatWeDo.value2.title">課題の本質を捉える</h3>
-                        <p data-i18n="whatWeDo.value2.desc">
-                            現場ヒアリングや業務分析を通じて、
-                            表面的な問題だけでなく、根本的な課題を抽出する。
-                        </p>
-                    </div>
-                    <div class="info-item">
-                        <h3 data-i18n="whatWeDo.value3.title">持続可能な仕組みづくり</h3>
-                        <p data-i18n="whatWeDo.value3.desc">
-                            導入後の定着・運用を見据えた業務設計と、
-                            組織が自走できる仕組みづくりを支援する。
-                        </p>
-                    </div>
+                <h2 class="section-title" data-i18n="whatWeDo.consultTitle">こんなテーマでご相談いただけます</h2>
+                <div class="consult-list">
+                    <div class="consult-item fade-in"><span class="challenge-marker"></span><p data-i18n="whatWeDo.consult1">構想はあるが、現場に落とし込めない</p></div>
+                    <div class="consult-item fade-in"><span class="challenge-marker"></span><p data-i18n="whatWeDo.consult2">システム導入が業務に馴染まず、定着しない</p></div>
+                    <div class="consult-item fade-in"><span class="challenge-marker"></span><p data-i18n="whatWeDo.consult3">プロジェクトが停滞していて、立て直したい</p></div>
+                    <div class="consult-item fade-in"><span class="challenge-marker"></span><p data-i18n="whatWeDo.consult4">属人化した業務を仕組み化したい</p></div>
+                    <div class="consult-item fade-in"><span class="challenge-marker"></span><p data-i18n="whatWeDo.consult5">多国籍・分散チームでの推進に不安がある</p></div>
                 </div>
             </div>
         </section>
 
-        <!-- お問い合わせへの誘導 -->
-        <section class="cta scroll-animation">
+        <section class="cta-section">
             <div class="container">
-                <div class="contact-content">
-                    <h3 data-i18n="contact.title">お問い合わせ</h3>
-                    <p data-i18n="contact.description">サービスについてのご質問やご相談は、以下のメールアドレスからお気軽にお問い合わせください。</p>
-                    <a href="mailto:info@creodest.com" class="contact-email">info@creodest.com</a>
-                </div>
+                <h2 class="section-title" data-i18n="cta.title">まずは壁打ちからご相談ください</h2>
+                <p class="cta-desc" data-i18n="cta.desc">構想整理、体制設計、業務整理、導入前の悩みなど、<br>初期段階のご相談も歓迎しています。</p>
+                <a href="contact.html" class="btn btn-primary btn-large" data-i18n="cta.button">お問い合わせ</a>
             </div>
         </section>
     </main>
 
-    <!-- フッター -->
     <footer>
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <img src="images/logo.png" alt="CreoDest" class="footer-logo-image">
-                <span>CreoDest</span>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="CreoDest" class="footer-logo-image">
+                    <span class="footer-company-name">CreoDest</span>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
+                        <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
+                        <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">支援領域</a></li>
+                        <li><a href="our-value.html" data-i18n="nav.ourValue">私たちの価値</a></li>
+                        <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方・仲間</a></li>
+                        <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
-                    <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
-                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
-                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
-                    <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
-                    <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <span data-i18n="footer.copyright">&copy; 2026 CreoDest All Rights Reserved.</span>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2026 CreoDest All Rights Reserved.</p>
             </div>
         </div>
     </footer>

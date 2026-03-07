@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>会社概要 - CreoDest</title>
-    <meta name="description" content="CreoDestの会社概要ページです。代表者、所在地などの情報をご覧いただけます。">
+    <meta name="description" content="CreoDestの会社概要。代表者、所在地などの情報をご覧いただけます。">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- ヘッダー -->
     <header>
         <div class="container header-container">
             <div class="logo-container">
@@ -20,26 +19,20 @@
                     <span class="company-name">CreoDest</span>
                 </a>
             </div>
-            
-            <!-- 言語切り替え -->
             <div class="lang-switcher">
                 <button class="lang-btn" data-lang="ja">日本語</button>
                 <button class="lang-btn" data-lang="en">EN</button>
                 <button class="lang-btn" data-lang="zh">中文</button>
                 <button class="lang-btn" data-lang="vi">Tiếng Việt</button>
             </div>
-            
-            <div class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="mobile-menu-btn"><span></span><span></span><span></span></div>
             <nav>
                 <ul>
                     <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
                     <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
-                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
-                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
+                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">支援領域</a></li>
+                    <li><a href="our-value.html" data-i18n="nav.ourValue">私たちの価値</a></li>
+                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方・仲間</a></li>
                     <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
                     <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
                 </ul>
@@ -47,18 +40,16 @@
         </div>
     </header>
 
-    <!-- メインコンテンツ -->
     <main>
-        <!-- ページヘッダー -->
         <section class="page-header">
             <div class="container">
-                <h1 data-i18n="company.pageTitle">会社概要</h1>
                 <p class="page-subtitle" data-i18n="company.pageSubtitle">Company</p>
+                <h1 data-i18n="company.pageTitle">会社概要</h1>
             </div>
         </section>
 
         <!-- 会社ロゴ -->
-        <section class="company-logo-section scroll-animation">
+        <section class="company-logo-section">
             <div class="container">
                 <div class="company-logo-display">
                     <img src="images/logo.png" alt="CreoDest" class="company-main-logo">
@@ -67,11 +58,9 @@
         </section>
 
         <!-- 会社情報 -->
-        <section class="company-info scroll-animation">
+        <section class="company-info">
             <div class="container">
-                <div class="section-title">
-                    <h2 data-i18n="company.infoTitle">会社情報</h2>
-                </div>
+                <h2 class="section-title" data-i18n="company.infoTitle">会社情報</h2>
                 <div class="company-table">
                     <table>
                         <tbody>
@@ -94,43 +83,40 @@
                         </tbody>
                     </table>
                 </div>
-                <p class="company-note" data-i18n="company.note">
-                    ※ 所在地は登記上の住所です。私たちは分散型の組織であり、特定の場所に集まることを前提としていません。
-                </p>
+                <p class="company-note" data-i18n="company.note">※ 所在地は登記上の住所です。私たちは分散型の組織であり、特定の場所に集まることを前提としていません。</p>
             </div>
         </section>
 
-        <!-- お問い合わせへの誘導 -->
-        <section class="cta scroll-animation">
+        <section class="cta-section">
             <div class="container">
-                <div class="contact-content">
-                    <h3 data-i18n="contact.title">お問い合わせ</h3>
-                    <p data-i18n="contact.description">CreoDestへのお問い合わせは、以下のメールアドレスからお願いいたします。</p>
-                    <a href="mailto:info@creodest.com" class="contact-email">info@creodest.com</a>
-                </div>
+                <h2 class="section-title" data-i18n="cta.title">まずは壁打ちからご相談ください</h2>
+                <p class="cta-desc" data-i18n="cta.desc">構想整理、体制設計、業務整理、導入前の悩みなど、<br>初期段階のご相談も歓迎しています。</p>
+                <a href="contact.html" class="btn btn-primary btn-large" data-i18n="cta.button">お問い合わせ</a>
             </div>
         </section>
     </main>
 
-    <!-- フッター -->
     <footer>
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <img src="images/logo.png" alt="CreoDest" class="footer-logo-image">
-                <span>CreoDest</span>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="CreoDest" class="footer-logo-image">
+                    <span class="footer-company-name">CreoDest</span>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
+                        <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
+                        <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">支援領域</a></li>
+                        <li><a href="our-value.html" data-i18n="nav.ourValue">私たちの価値</a></li>
+                        <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方・仲間</a></li>
+                        <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
-                    <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
-                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
-                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
-                    <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
-                    <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <span data-i18n="footer.copyright">&copy; 2026 CreoDest All Rights Reserved.</span>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2026 CreoDest All Rights Reserved.</p>
             </div>
         </div>
     </footer>

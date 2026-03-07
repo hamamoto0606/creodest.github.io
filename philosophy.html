@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>思想 - CreoDest</title>
-    <meta name="description" content="CreoDestの思想・カルチャー。人生の制約を前提にし、非対称性を構造とイノベーションで溶かす。">
+    <meta name="description" content="CreoDestの根底にある考え方。人生の制約を前提にし、非対称性を構造とイノベーションで溶かす。">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- ヘッダー -->
     <header>
         <div class="container header-container">
             <div class="logo-container">
@@ -20,26 +19,20 @@
                     <span class="company-name">CreoDest</span>
                 </a>
             </div>
-            
-            <!-- 言語切り替え -->
             <div class="lang-switcher">
                 <button class="lang-btn" data-lang="ja">日本語</button>
                 <button class="lang-btn" data-lang="en">EN</button>
                 <button class="lang-btn" data-lang="zh">中文</button>
                 <button class="lang-btn" data-lang="vi">Tiếng Việt</button>
             </div>
-            
-            <div class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="mobile-menu-btn"><span></span><span></span><span></span></div>
             <nav>
                 <ul>
                     <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
                     <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
-                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
-                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
+                    <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">支援領域</a></li>
+                    <li><a href="our-value.html" data-i18n="nav.ourValue">私たちの価値</a></li>
+                    <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方・仲間</a></li>
                     <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
                     <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
                 </ul>
@@ -47,36 +40,61 @@
         </div>
     </header>
 
-    <!-- メインコンテンツ -->
     <main>
-        <!-- ページヒーロー -->
-        <section class="page-hero">
+        <section class="page-header">
             <div class="container">
                 <p class="page-subtitle" data-i18n="philosophy.pageSubtitle">Philosophy</p>
-                <h1 class="page-title" data-i18n="philosophy.pageTitle">思想</h1>
+                <h1 data-i18n="philosophy.pageTitle">思想</h1>
             </div>
         </section>
 
-        <!-- コアセクション -->
-        <section class="content-section">
-            <div class="container">
-                <div class="content-block fade-in">
-                    <h2 data-i18n="philosophy.coreTitle">人生の制約を前提にする</h2>
-                    <p data-i18n="philosophy.coreText1">人には様々な制約がある。育児、介護、健康、学習、地理的な制約。これらは「例外」ではなく、人生の「前提」である。</p>
-                    <p data-i18n="philosophy.coreText2">私たちは、これらの制約を「働く上での障害」として扱わない。むしろ、多様な制約を持つ人々が、それぞれの強みを発揮できる構造をつくることで、より大きな価値を生み出せると考えている。</p>
-                </div>
+        <section class="philosophy-section">
+            <div class="container content-narrow">
+                <h2 data-i18n="philosophy.founderTitle">人は、それぞれ異なる条件を抱えて生きている</h2>
+                <p class="philosophy-body" data-i18n="philosophy.founderText1">時間の使い方も、働ける場所も、集中できる環境も、背負っている責任も同じではない。それらは特別な事情ではなく、本来ひとりひとりの人生に織り込まれている前提である。</p>
+                <p class="philosophy-body" data-i18n="philosophy.founderText2">にもかかわらず、多くの組織は、均質な時間、均質な場所、均質な働き方を暗黙の標準としてきた。その標準に合わないものは、個人の問題として処理され、能力や可能性そのものまで過小評価されてしまう。</p>
+                <p class="philosophy-body" data-i18n="philosophy.founderText3">私たちは、この前提を変えたい。人の違いを吸収できる構造をつくり、それぞれの強みが自然に機能する組織を設計する。制約を乗り越えさせるのではなく、制約を織り込んだまま価値が生まれる形をつくること。それが、CreoDestの出発点である。</p>
+            </div>
+        </section>
 
-                <div class="content-block fade-in">
-                    <h2 data-i18n="philosophy.asymmetryTitle">非対称性を溶かす</h2>
-                    <p data-i18n="philosophy.asymmetryText1">情報の非対称性、機会の非対称性、能力の非対称性。世の中には様々な非対称性が存在する。</p>
-                    <p data-i18n="philosophy.asymmetryText2">これらの非対称性は完全になくなることはない。しかし、構造とイノベーションによって、その影響を最小化することはできる。</p>
-                    <p data-i18n="philosophy.asymmetryText3">私たちは、テクノロジーと仕組みの力で、非対称性を溶かし、より公平な価値創出の場をつくることを目指している。</p>
+        <section class="philosophy-section alt-bg">
+            <div class="container content-narrow">
+                <h2 data-i18n="philosophy.asymmetryTitle">非対称性を溶かす</h2>
+                <p class="philosophy-body" data-i18n="philosophy.asymmetryText1">情報の非対称性、機会の非対称性、能力の非対称性。世の中には様々な非対称性が存在する。</p>
+                <p class="philosophy-body" data-i18n="philosophy.asymmetryText2">これらの非対称性は完全になくなることはない。しかし、構造とイノベーションによって、その影響を最小化することはできる。</p>
+                <p class="philosophy-body" data-i18n="philosophy.asymmetryText3">私たちは、テクノロジーと仕組みの力で、非対称性を溶かし、より公平な価値創出の場をつくることを目指している。</p>
+            </div>
+        </section>
+
+        <section class="philosophy-section">
+            <div class="container content-narrow">
+                <h2 data-i18n="philosophy.practiceTitle">この思想が仕事にどう表れるか</h2>
+                <div class="philosophy-practice-list">
+                    <div class="practice-item fade-in">
+                        <h3 data-i18n="philosophy.practice1.title">離れていても、仕事はひとつにできる</h3>
+                        <p data-i18n="philosophy.practice1.desc">場所が違っても、働ける時間が違っても、役割と情報の流れが整理されていれば、チームは十分に機能する。人を無理に同じ場所や同じ働き方に合わせるのではなく、違いがあるまま前に進める体制をつくる。</p>
+                    </div>
+                    <div class="practice-item fade-in">
+                        <h3 data-i18n="philosophy.practice2.title">一度きりではなく、続いていく形まで考える</h3>
+                        <p data-i18n="philosophy.practice2.desc">その場しのぎで終わる成果ではなく、現場に残り、運用され、少しずつ良くなっていく形を大切にする。導入して終わりではなく、定着し、回り続けるところまで見据えて支援する。</p>
+                    </div>
+                    <div class="practice-item fade-in">
+                        <h3 data-i18n="philosophy.practice3.title">均質さより、噛み合うことを重視する</h3>
+                        <p data-i18n="philosophy.practice3.desc">同じような人を並べることが強い組織だとは考えない。得意不得意の異なる人が、適切な役割を持ち、補い合いながら働くことで、組織はより強くなる。</p>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="cta.title">課題が固まりきる前でも、ご相談ください</h2>
+                <p class="cta-desc" data-i18n="cta.desc">構想段階からの整理、体制の見直し、業務の仕組み化など、<br>初期段階のご相談も歓迎しています。</p>
+                <a href="contact.html" class="btn btn-primary btn-large" data-i18n="cta.button">お問い合わせ</a>
             </div>
         </section>
     </main>
 
-    <!-- フッター -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -88,8 +106,9 @@
                     <ul>
                         <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
                         <li><a href="philosophy.html" data-i18n="nav.philosophy">思想</a></li>
-                        <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">私たちの価値</a></li>
-                        <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方</a></li>
+                        <li><a href="what-we-do.html" data-i18n="nav.whatWeDo">支援領域</a></li>
+                        <li><a href="our-value.html" data-i18n="nav.ourValue">私たちの価値</a></li>
+                        <li><a href="how-we-work.html" data-i18n="nav.howWeWork">働き方・仲間</a></li>
                         <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
                         <li><a href="contact.html" data-i18n="nav.contact">お問い合わせ</a></li>
                     </ul>
